@@ -75,5 +75,15 @@
     <footer> <!--Apertura de pie de página-->
         <p>&copy; 2024 Portal Escolar. Todos los derechos reservados.</p> <!--parrafo más &copy-->
     </footer> <!--Cierre de pie de página-->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
 </body> <!--cierre del cuerpo-->
 </html> <!--Cierre de html-->
