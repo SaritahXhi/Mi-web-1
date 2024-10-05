@@ -1,78 +1,164 @@
-<!DOCTYPE html> <!--Indica el tipo de documento y especifica que trabajamos con html5-->
-<html lang="es"> <!--Abre la etiqueta html y establece el idioma del contenido en español-->
-<head> <!--abre seccion que contiene metadatos y enlace a los recursos-->
-    <meta charset="UTF-8"> <!--Define la codificación de carecteres como UTF-8, admite la mayoria de los caracteres de todos los idiomas-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ajusta el diseño de los dispositivos móviles, configurando el ancho de la ventana de visualización-->
-    <link rel="stylesheet" href="styles.css"> <!--Enlaza el archivo css que contiene los estilos de la página-->
-    <title>Portal Escolar</title><!--Define el titulo de la pagina que aparece en la página del navegador-->
-    <link rel="icon" href="11.png"> <!--colocamos el icono de nuestro portal web-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portal Escolar</title>
+    <link rel="icon" href="11.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-   
-</head><!--cierra la sección head-->
+</head>
 
-<body><!--Abre la sección body y contiene la información visible de la página-->
-        <header class="header"><!--Abre la sección de encabezado, le asigna una clase "header" para definir estilos-->
-        <img src="11.png" alt="Logo Escolar" class="logo"> <!--Muestra una imágen (logo escolar), al cual le incluimos un texto alternativo para poder accedes y colocamos una clase logo-->
-        <h1>Portal Escolar</h1><!--Se agrega un encabezado principal con el titulo "portal escolar."-->
-        <nav> <!--Abre una sección de navegación del sitio-->
-            <ul class="menu"><!--Crea una lista desordenada con la clase "menu"-->
-                <li><a href="#home">Inicio</a></li><!--Agrega un elemento de la lista con un enlace que lleva a la sección "inicio", con atributo para accesibilidad-->
-                <li><a href="acercade.html" target="_blank" rel="noopener noreferrer">Acerca de</a><!--Agrega un enlace a la sección "Acerca de" y abre un submenú-->
-                    <ul class="dropdown"><!--Crea un submenú (lista desordenada) para las opciones adicionales "Acerca de"-->
-                        <li><a href="#mission">Nuestra Misión</a></li><!--Añade un enlace a la subsección "Nuestra misión"-->
-                        <li><a href="#history">Nuestra Historia</a></li><!--Añade un enlace a la subseción "Nuestra Historia"-->
-                    </ul> <!--cierre del submenú-->
-                </li><!--Cierre de la lista principal-->
-                <li><!--abre submenú-->
-                    <a href="#courses">Cursos</a><!--Agrega enlace a la sección cursos-->
-                    <ul class="dropdown"><!--Crea un submenú para las opciones de cursos-->
-                        <li><a href="#math">Matemáticas</a></li> <!--Añade un enlace a la subsección "Matemáticas"-->
-                        <li><a href="#science">Ciencias</a></li> <!--Añade un enlace a la subsección "Ciencias"-->
-                        <li><a href="#art">Arte</a></li> 
-                    </ul> <!--cierra lista de navegación-->
-                </li> <!--cierre submenú-->
-                <li><a href="#gallery">Galería</a></li><!--Añade un enlace a la sección "Galería"-->
-                <li><a href="#contact">Contacto</a></li><!--Agrega un enlace a la sección "Contacto"-->
-            </ul><!--cierre-->
-        </nav> <!--Cierra el bloque nav-->
-    </header> <!--Cierra el encabezado de página-->
-    <main> <!--Abre la sección principal en donde se encuentra el contenido central-->
+<body>
+    <header class="header">
+        <img src="11.png" alt="Logo Escolar" class="logo">
+        <h1>Portal Escolar</h1>
+        <button class="menu-toggle" aria-label="Abrir menú"> <!-- Botón menú hamburguesa -->
+            &#9776; <!-- Icono de hamburguesa -->
+        </button>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="acercade.html" target="_blank" rel="noopener noreferrer">Acerca de</a>
+                    <ul class="dropdown">
+                        <li><a href="#mission">Nuestra Misión</a></li>
+                        <li><a href="#history">Nuestra Historia</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#courses">Cursos</a>
+                    <ul class="dropdown">
+                        <li><a href="#math">Matemáticas</a></li>
+                        <li><a href="#science">Ciencias</a></li>
+                        <li><a href="#art">Arte</a></li>
+                    </ul>
+                </li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        
-        <section id="home"> <!--Crea una sección para inicio, identificada por el ID "home"-->
-            <h2>Bienvenido al Portal Escolar</h2> <!--Agrega un encabezado secundario para la sección de inicio-->
-            <p>En nuestro portal podrás encontrar toda la información relevante sobre nuestra escuela, cursos y actividades.</p><!--Proporciona un parrafo de bienvenida-->
-        </section> <!--cierra la sección "Inicio"-->
+    <main>
+        <section id="home">
+            <h2>Bienvenido al Portal Escolar</h2>
+            <p>En nuestro portal podrás encontrar toda la información relevante sobre nuestra escuela, cursos y actividades.</p>
+        </section>
 
-        <section id="about"><!--crea una sección acerca de, identificada por el ID about-->
-            <h2>Acerca de Nosotros</h2><!--Agrega un encabezado secundario para la sección "Acerca de"-->
-            <p>Nuestra misión es proporcionar una educación de calidad y preparar a los estudiantes para el futuro.</p> <!--parrafo-->
-        </section> <!--cierre de sección-->
+        <section id="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>Nuestra misión es proporcionar una educación de calidad y preparar a los estudiantes para el futuro.</p>
+        </section>
 
-        <section id="courses"><!--Crea una sección para cursos, identificada por el ID "courses"-->
-            <h2>Cursos Ofrecidos</h2><!--Agrega un encabezado secundario para la sección de cursos-->
-            <p>Ofrecemos una amplia variedad de cursos para satisfacer las necesidades de todos nuestros estudiantes.</p><!--parrafo-->
-        </section> <!--Cierra la sección cursos-->
+        <section id="courses">
+            <h2>Cursos Ofrecidos</h2>
+            <p>Ofrecemos una amplia variedad de cursos para satisfacer las necesidades de todos nuestros estudiantes.</p>
+        </section>
 
-        <section id="gallery"><!--Crea una sección para galería, identificada por el ID Galery-->
-            <h2>Galería de Imágenes</h2> <!--Agrega un encabezado secundario para la sección de galería-->
-            <div class="gallery"> <!--Abre un contenedor para las imágenes de la galería con la clase "galery"-->
-                <img src="https://via.placeholder.com/300" alt="Imagen 1"> <!--Muestra una imágen de la galería-->
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Imagen 1">
                 <img src="https://via.placeholder.com/300" alt="Imagen 2">
                 <img src="https://via.placeholder.com/300" alt="Imagen 3">
                 <img src="https://via.placeholder.com/300" alt="Imagen 4">
                 <img src="https://via.placeholder.com/300" alt="Imagen 5">
                 <img src="https://via.placeholder.com/300" alt="Imagen 6">
-            </div><!--Cierra el contenedor de las imágenes-->
-        </section> <!--cierra la sección galería-->
-        
-    </main><!--Cierre de la sección principal-->
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1XSVI_TibrU?si=-2MJgEYt4rUt8UEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <P>codigofacilito. (2018, July 27).<br> Historia de CSS en 3 minutos [Video]. </P>
+            </div>
+        </section>
+    </main>
 
-    <footer> <!--Apertura de pie de página-->
-        <p>&copy; 2024 Portal Escolar. Todos los derechos reservados.</p> <!--parrafo más &copy-->
-    </footer> <!--Cierre de pie de página-->
-</body> <!--cierre del cuerpo-->
-</html> <!--Cierre de html-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1XSVI_TibrU?si=-2MJgEYt4rUt8UEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>codigofacilito. (2018, July 27).<br> Historia de CSS en 3 minutos [Video]. </p>
+
+    <footer>
+        <p>&copy; 2024 Portal Escolar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Archivo de JavaScript para el menú hamburguesa -->
+</body>
+</html>
+2. CSS (styles.css)
+css
+Copiar código
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+h1 {
+    color: white;
+}
+
+/* Estilos del menú */
+.nav {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Ocultar menú en pantallas pequeñas por defecto */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid #fff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
